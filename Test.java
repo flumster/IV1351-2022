@@ -109,11 +109,10 @@ String instrumentS = "violin";
 			            }    
 		            
 			con.commit();
-			con.close();  
 			scannerIn.close();
 		}catch(Exception e){ System.out.println(e); con.rollback();}
 		System.out.println("\n");
-
+		con.close(); 
 	}
 
 }
